@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen px-6 md:px-11 pt-10 pb-3 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="min-h-screen px-6 md:px-11 pt-27 pb-3 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       {/* Text Section */}
       <div className="flex flex-col items-center text-center">
-        <h1 className="text-[#2E7D32] text-5xl md:text-7xl font-bold leading-tight">
+        <h1 className="text-[#2E7D32] text-5xl md:text-7xl font-bold">
           PLAY
           <br />
           MINTON

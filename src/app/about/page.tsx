@@ -1,6 +1,7 @@
+import Link from "next/link";
 export default function AboutPage() {
   return (
-    <section className="min-h-screen w-full max-w-[1100px] mx-auto gap-x-4 gap-y-8 pt-15">
+    <section className="min-h-screen w-full max-w-[1100px] mx-auto gap-x-4 gap-y-8  md:px-11 pt-27">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#2E7D32] mb-6">
           🏸 About Playminton
@@ -27,10 +28,14 @@ export default function AboutPage() {
               love of badminton alive with helpful and engaging content.
             </p>
           </div>
+
+          <Link href="https://www.instagram.com">
+            <button className="mt-3 mb-6 px-6 py-3 bg-[#2E7D32] text-white font-semibold rounded-full hover:bg-black transition-colors">
+              Follow us on Instagram
+            </button>
+          </Link>
         </div>
       </div>
     </section>
   );
 }
-//   <main className="pt-16 pb-8 px-8">
-//     <section className="grid grid-cols-3 w-full max-w-[1100px] mx-auto gap-x-4 gap-y-8 pt-15 text-black">

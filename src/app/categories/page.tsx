@@ -1,35 +1,44 @@
-import Image from "next/image";
-export default function AboutSectionPage() {
+export default function CategoriesPage() {
+  const categories = [
+    {
+      name: "Mental Game",
+      description:
+        "Focuses on mindset, concentration, and the psychological aspects of badminton.",
+    },
+    {
+      name: "Technique & Skills",
+      description:
+        "Covers technical aspects of badminton including footwork, grip, and shot execution.",
+    },
+    {
+      name: "Team Play",
+      description:
+        "Dedicated to doubles strategies, communication, and working effectively with a partner.",
+    },
+    {
+      name: "Training & Practice",
+      description:
+        "Includes tips on training routines, drills, fitness, and regular practice.",
+    },
+  ];
+
   return (
-    <section id="about" className="min-h-screen bg-[#1E1E1E] pt-24 px-4">
-      <h2 className="text-center text-4xl font-bold mb-2 text-white">
-        About <span className="text-[#FF69B4]">me!</span>
+    <section className="max-w-5xl mx-auto py-12  md:px-11 pt-27">
+      <h2 className="text-4xl font-bold text-[#2E7D32] mb-10 text-center">
+        Playminton Categories
       </h2>
-      <div className="h-1 w-32 bg-[#FF69B4] mb-6 mx-auto" />
-      <h3 className="text-[#B0B0B0] text-xl pt-2.5 mb-9 text-center">
-        Curious about me? Here you have it:
-      </h3>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-6xl mx-auto">
-        {/* Profile Image */}
-        <div className="relative w-60 h-60 mx-auto border-4 border-[#FF69B4] rounded-full">
-          <Image
-            src="/picture-profile.png"
-            alt="profile picture"
-            fill
-            className="rounded-full object-cover"
-          />
-        </div>
-
-        {/* Text Content */}
-        <p className="md:col-span-2 text-[#F5F5F5] text-lg md:text-xl leading-relaxed text-justify px-2">
-          Hi! I found myself drawn to the creativity and logic of building
-          websites. I’m a Chemistry graduate with a newfound passion for web
-          development. While my academic background taught me precision and
-          critical thinking, I’m now diving into the world of front-end and
-          full-stack development — learning by doing, experimenting with code,
-          and slowly crafting my place in tech, one project at a time.
-        </p>
+      <div className="grid md:grid-cols-2 gap-8">
+        {categories.map((category) => (
+          <div
+            key={category.name}
+            className="p-6 border border-gray-200 rounded-xl"
+          >
+            <h2 className="text-2xl font-semibold text-black mb-2">
+              {category.name}
+            </h2>
+            <p className="text-gray-600">{category.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

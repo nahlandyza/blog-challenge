@@ -17,13 +17,13 @@ export default async function Header() {
         </Link>
 
         {/* Nav Links */}
-        <nav className="flex flex-wrap gap-4 justify-center font-semibold text-sm md:text-base">
+        <nav className="flex flex-wrap gap-7 justify-center font-semibold text-sm md:text-base">
           <Link href="/blog" className="hover:underline">
             BLOG
           </Link>
-          {/* <Link href="/categories" className="hover:underline">
+          <Link href="/categories" className="hover:underline">
             CATEGORIES
-          </Link> */}
+          </Link>
           <Link href="/about" className="hover:underline">
             ABOUT
           </Link>

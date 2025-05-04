@@ -22,7 +22,7 @@ export default async function BlogPage() {
   console.log(data);
 
   return (
-    <section className="grid grid-cols-3 w-full max-w-[1100px] mx-auto gap-x-4 gap-y-8 pt-15 text-black">
+    <section className="grid grid-cols-3 w-full max-w-[1100px] mx-auto gap-x-4 gap-y-8  md:px-11 pt-27 text-black">
       {data.map((article: ArticleType) => (
         <article key={article.objectId} className="bg-white">
           <div className="relative h-42 w-full">
